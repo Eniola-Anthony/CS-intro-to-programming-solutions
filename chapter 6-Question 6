@@ -1,8 +1,6 @@
  int n = 1;
 
             int k = 1;
-            
-            
             Console.WriteLine("Enter a value for the Fibonacci members:");
             int a  = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter a value for the Fibonacci members:");
