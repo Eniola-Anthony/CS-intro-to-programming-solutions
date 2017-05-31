@@ -1,0 +1,38 @@
+  Console.Write("Enter the length of the array a: ");
+            int array = int.Parse(Console.ReadLine());
+            int[] a = new int[array];
+            for (int b = 0; b < a.Length; b++)
+            {
+                Console.Write("Enter an interger {0}: ", b + 1);
+                a[b] = int.Parse(Console.ReadLine());
+            }
+
+            Console.Write("Enter the length of the array b: ");
+            int arrayB = int.Parse(Console.ReadLine());
+            int[] c = new int[arrayB];
+            for (int b = 0; b < c.Length; b++)
+            {
+                Console.Write("Enter an interger {0}: ", b + 1);
+                c[b] = int.Parse(Console.ReadLine());
+            }
+
+            if (a.Length != c.Length)
+            {
+                Console.WriteLine("The arrays are not equal");
+                
+            }
+            else
+            {
+                for (int d = 0; d < a.Length; d++)
+                {
+                    if (a[d] != c[d])
+                    {
+                        Console.WriteLine("The arrays are not equal");
+                        break;
+                  
+                   }
+
+                    
+                }
+
+            }
