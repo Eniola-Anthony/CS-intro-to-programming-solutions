@@ -1,0 +1,25 @@
+ static void Main(string[] args)
+
+        {
+            int n = 100;
+            Console.WriteLine("Number entered by user is {0}: ", n);
+            bool a = chkC(n);
+            if (a)
+            {
+                Console.WriteLine("The client is healthy");
+            }
+            else { Console.WriteLine("The client is ill"); }
+        }
+        
+        static bool chkC(int c)
+        {
+            bool b = true;
+            int d = (c - 32) * 5 / 9;
+            if(d > 37)
+            {
+                b = false;
+                return b;
+            }
+            return b;
+        }
+      
